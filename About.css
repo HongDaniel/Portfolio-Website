@@ -1,0 +1,265 @@
+body {
+    background-color: #efe7e3;
+}
+
+.frame {
+    margin: 5% 100px 8px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*navigator*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.nav h3 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    color: #c2b4ab;
+    letter-spacing: 0.3px;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    list-style: none;
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-right: 15px;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+/*Profile-Section*/
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 8% 7% 0.4% 7%;
+}
+
+.profile > img {
+    width: 370px;
+    height: auto;
+    margin: 0% 8% 8% 2.5%;
+}
+
+.self-intro {
+    margin: 0;
+}
+
+.self-intro > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.13em;
+    margin: 0;
+    margin-bottom: 50px;
+    line-height: 35px;
+}
+
+.self-intro > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 680;
+    font-size: 1.9em;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.self-intro > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 10px;
+}
+
+.cap-list > li {
+    margin-bottom: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+
+    background-image: url('image/plant.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+
+/*value*/
+
+.value {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.value > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 680;
+    font-size: 1.9em;
+    margin-bottom: 10%x;
+    margin-top: 0px;
+    margin-left: 5%;
+}
+
+.responsibility,
+.learning,
+.determination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.responsibility > img,
+.learning > img,
+.determination > img {
+    width: 150px;
+    margin: 2% 5.5% 3% 5%;
+    border: 2px solid #c2b4ab;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+.contactme {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2.1em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contactme h3 {
+    margin: 0;
+    color: black;
+    border-bottom: 1.8px solid black;
+}
+
+footer h3:hover {
+    transform: scale(1.05);
+    color: black;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+}
+/*
+#email {
+    margin-left: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 590;
+    font-size: 20px;
+}
+
+#github {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 590;
+    font-size: 20px;
+    margin-left: 15px;
+}
+*/
+
+footer p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+    margin-top: 2%;
+}
+
+a[title='Freepik']:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a[title='Flaticon']:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/*pop-up*/
+#modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px;
+    opacity: 0;
+}
+
+#modal:target {
+    opacity: 1;
+}
+
+#email,
+#git {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#close {
+    margin-top: 21px;
+    padding-left: 42%;
+}
+
+#modal p {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#modal img {
+    height: 40px;
+}
+
+#close p {
+    font-style: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    background-color: rgb(231, 231, 231);
+    display: inline;
+    padding: 5px;
+}
+
+#close a {
+    text-decoration: none;
+    color: black;
+    transition: all o.5s;
+}
