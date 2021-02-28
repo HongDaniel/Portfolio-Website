@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>HongDaniel</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,800;0,900;1,200;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Portfolio.css">
+
+
+<body>
+  <div class="frame">
+
+    <header class="nav">
+      
+      <a href="index.html"><h3 class="site-owner">HongDaniel</h3></a>
+
+      <ul class="nav-menu">
+        <li><a href="#content" class="li1">WORK</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+      </ul>
+
+    </header>
+    <!-- Smooth Scroll-->
+<script>
+  $('.li1').click(function(){
+    $.scrollTo(this.hash || 0,580);
+    e.preventDefault();
+  })
+</script>
+    <!---->
+
+    <div class="dash-board">
+      <h1 class="korean-intro">안녕하세요! 저는 <a class="no-highlight" id="lip">입술</a>보다는 <a class="no-highlight" id="action">행동</a>으로<br> 
+      &nbsp&nbsp&nbsp&nbsp이 세상에 선한 울림이 되고 싶은 <br>
+      FRONT-END 개발자 <a class="highlight">HongDaniel</a>입니다!
+      </h1>
+      <img src="image/코딩짤.jpg" alt="코딩켓">
+
+      <p class="english-intro">
+        Hi! I'm HongDaniel, a Front-End Developer.<br>
+        I wish to be a man who speaks not through lips but through actions.<br>
+        Thank you for visiting my website!
+      </p>
+    </div>
+
+    <div id="content">
+        <h3>Recent Works</h3>
+        <div class="works">
+          
+          <div class="work1">
+            <video autoplay muted loop controls id="video1">
+              <source src="반응형웹.mp4" type="video/mp4">
+            </video>
+            <div class="description-right">
+            <h4>Responsive Web Design</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non magnam nulla, officiis ipsam placeat, libero labore veritatis amet laboriosam accusantium laudantium reprehenderit adipisci doloremque corrupti voluptatum incidunt quae. Accusamus, earum!</p>
+          </div>
+          </div>
+
+          <div class="work2">
+
+            <div class="description-left">
+              <h4>Webgame Using Javascript</h4>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nihil nemo, minus asperiores quasi quidem unde ducimus debitis perferendis hic illum minima sed repellat corporis adipisci animi omnis! Ullam, nemo.</p>
+            </div>
+
+            <video autoplay muted loop controls id="video2">
+              <source src="카드짝맞추기.mp4" type="video/mp4">
+              </video>                
+          
+          </div>     
+          </div>
+        </div>
+    
+
+    <footer>
+      <a href="#modal" class="contactme">
+      <h3>Contact Me</h3>
+    </a>
+      <!--
+      <div class="pop-up">
+        <a id="email">E-mail</a>
+        <a id="github">Github</a>
+      </div>
+      -->
+      <p class="footer-comment">Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+    </footer>
+
+
+    <div id="modal">
+      <div id="email">
+        <img src="image/email.png" alt="email">
+        <p>jungd1223@naver.com</p>
+      </div>
+
+      <div id="git">
+        <img src="image/github.png" alt="">
+        <p>https://github.com/HongDaniel</p>
+      </div>
+
+      <div id="close">
+        <a href="#a"><p>Close</p></a>
+      </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
