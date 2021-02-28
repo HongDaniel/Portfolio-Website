@@ -123,20 +123,31 @@ a:hover {
 
 .responsibility,
 .learning,
-.determination {
+.discretion {
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .responsibility > img,
 .learning > img,
-.determination > img {
+.discretion > img {
     width: 150px;
     margin: 2% 5.5% 3% 5%;
     border: 2px solid #c2b4ab;
     border-radius: 30px;
     padding: 10px;
+}
+
+.value h4{
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.7em;
+}
+
+.value p{
+    font-family:'Noto Sans KR', sans-serif;
+    font-size: 1.25em;
+    line-height: 35px;
+    font-weight: 420;
 }
 
 /*footer*/

@@ -158,8 +158,16 @@ a:hover {
 
 #content p {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1.2em;
-    font-weight: 300;
+    font-size: 1.32em;
+    font-weight: 450;
+    
+}
+
+#ref{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
+    font-weight: 450;
+    font-style: italic;
 }
 
 .work1 {
