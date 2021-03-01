@@ -2,8 +2,10 @@ body {
     background-color: #efe7e3;
 }
 
+/* 모바일 - 767px 이하 */
+
 .frame {
-    margin: 5% 100px 8px 100px;
+    margin: 5% 10px 8px 10px;
     display: flex;
     flex-direction: column;
 }
@@ -20,7 +22,7 @@ header {
 .nav h3 {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.25em;
     color: #c2b4ab;
     letter-spacing: 0.3px;
 }
@@ -34,8 +36,8 @@ header {
     display: inline;
     align-self: center;
     margin: 0;
-    margin-right: 15px;
-    font-size: 1.3em;
+    margin-right: 2px;
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.3px;
 }
@@ -55,15 +57,15 @@ a:hover {
 
 .profile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: 8% 7% 0.4% 7%;
 }
 
 .profile > img {
-    width: 370px;
+    width: 230px;
     height: auto;
-    margin: 0% 8% 8% 2.5%;
+    margin: 0% 8% 8% 8%;
 }
 
 .self-intro {
@@ -72,16 +74,16 @@ a:hover {
 
 .self-intro > p {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1.13em;
+    font-size: 0.84em;
     margin: 0;
     margin-bottom: 50px;
-    line-height: 35px;
+    line-height: 24px;
 }
 
 .self-intro > h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 680;
-    font-size: 1.9em;
+    font-size: 1.4em;
     margin-bottom: 10px;
     margin-top: 0;
 }
@@ -96,11 +98,10 @@ a:hover {
 .cap-list > li {
     margin-bottom: 12px;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 18px;
+    font-size: 0.84em;
     font-style: italic;
-
     background-image: url('image/plant.png');
-    background-size: 30px;
+    background-size: 15px;
     background-repeat: no-repeat;
 }
 
@@ -115,9 +116,9 @@ a:hover {
 .value > h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 680;
-    font-size: 1.9em;
-    margin-bottom: 10%x;
-    margin-top: 0px;
+    font-size: 1.4em;
+    margin-bottom: 10%;
+    margin-top: 150px;
     margin-left: 5%;
 }
 
@@ -131,41 +132,48 @@ a:hover {
 .responsibility > img,
 .learning > img,
 .discretion > img {
-    width: 150px;
+    width: 91px;
+    height: 91px;
     margin: 2% 5.5% 3% 5%;
     border: 2px solid #c2b4ab;
     border-radius: 30px;
-    padding: 10px;
+    padding: 7px;
 }
 
 .value h4{
     font-family:'Montserrat', sans-serif;
-    font-size: 1.7em;
+    font-size: 1em;
+    margin-top: 8px;
+    margin-bottom: 2px;
 }
 
 .value p{
     font-family:'Noto Sans KR', sans-serif;
-    font-size: 1.25em;
-    line-height: 35px;
     font-weight: 420;
+    font-size: 0.65em;
+    line-height: 17px;
+    
 }
 
 /*footer*/
+
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10%;
 }
+
 footer a {
     color: black;
     text-decoration: none;
 }
+
 .contactme {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 2.1em;
+    font-size: 1.4em;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .contactme h3 {
@@ -199,7 +207,7 @@ footer h3:hover {
 footer p {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 100;
-    font-size: 15px;
+    font-size: 12px;
     font-style: italic;
     margin: 0;
     margin-top: 2%;
@@ -273,4 +281,181 @@ a[title='Flaticon']:hover {
     text-decoration: none;
     color: black;
     transition: all o.5s;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* 태블릿 - 768px 이상 */
+@media screen and (min-width: 768px) {
+
+.frame {
+        margin: 5% 45px 8px 45px;
+}
+
+/*navigator*/
+
+.nav h3 {
+    font-size: 1.7em;
+}
+
+.nav li {
+    margin-right: 10px;
+    font-size: 1.15em;
+}
+
+/*Profile-Section*/
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 8% 7% 0.4% 2%;
+}
+
+.profile > img {
+width: auto;
+height: 250px;
+margin: 0% 8% 8% 2.5%;
+}
+
+.self-intro > p {
+    font-size: 1.05em;
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
+.self-intro > h2 {
+    font-size: 1.3em;
+}
+
+.cap-list > li {
+    font-size: 0.97em;
+    background-size: 20px;
+}
+
+/*value*/
+
+.value > h2 {
+    margin-top: 150px;
+    font-size: 1.3em;
+}
+
+.responsibility > img,
+.learning > img,
+.discretion > img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.value h4{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    margin-top: 16px;
+}
+
+.value p{
+    font-size: 1em;
+    line-height: 23px;
+    margin-top: 7px;
+}
+
+/*footer*/
+
+.contactme {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-top: 1.5%;
+    font-size: 14px;
+}
+
+}
+
+/* PC - 992px 이상 */
+
+@media screen and (min-width: 992px) {
+
+.frame {
+    margin: 5% 100px 8px 100px;
+}
+
+/*navigator*/
+
+.nav h3 {
+    font-size: 1.8em;
+}
+
+.nav li {
+    margin-right: 15px;
+    font-size: 1.3em;
+}
+
+/*Profile-Section*/
+
+.profile {
+    margin: 8% 7% 0.4% 7%;
+}
+
+.profile > img {
+    width: 370px;
+    height: auto;
+    margin: 0% 8% 8% 2.5%;
+}
+
+.self-intro > p {
+    font-size: 1.27em;
+    margin-bottom: 50px;
+}
+
+.self-intro > h2 {
+    font-size: 1.9em;
+}
+
+.cap-list > li {
+    font-size: 1.27em;
+    background-size: 30px;
+}
+
+/*value*/
+
+.value > h2 {
+    margin-top: 0px;
+    font-size: 1.9em;
+    margin-bottom: 25.232px;
+    margin-top: 0px;
+    margin-left: 5%;
+}
+
+.responsibility > img,
+.learning > img,
+.discretion > img {
+    width: 150px;
+    height: 158.212px;
+}
+
+.value h4{
+    font-size: 1.7em;
+    margin-bottom: 36.176px;
+    margin-top: 36.176px;
+}
+
+.value p{
+    font-size: 1.25em;
+    line-height: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.contactme {
+    font-size: 2.1em;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-top: 2%;
+    font-size: 15px;
+}
+
 }

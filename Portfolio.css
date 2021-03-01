@@ -6,8 +6,10 @@ body {
     background-color: #efe7e3;
 }
 
+/* 모바일 - 759px 이하 */
+
 .frame {
-    margin: 5% 100px 8px 100px;
+    margin: 5% 10px 8px 10px;
     display: flex;
     flex-direction: column;
 }
@@ -24,7 +26,7 @@ header {
 .nav h3 {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.25em;
     color: #c2b4ab;
     letter-spacing: 0.3px;
 }
@@ -38,8 +40,8 @@ header {
     display: inline;
     align-self: center;
     margin: 0;
-    margin-right: 15px;
-    font-size: 1.3em;
+    margin-right: 2px;
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.3px;
 }
@@ -64,19 +66,14 @@ a:hover {
 }
 
 .dash-board > img {
-    position: absolute;
-    width: auto;
-    height: 230.283px;
-    margin-top: 22.728px;
-    margin-left: 58%;
-    border: 2px solid #c2b4ab;
-    border-radius: 50%;
+    display: none;
 }
 
 .korean-intro {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 2.4em;
-    margin-bottom: 25px;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 .highlight {
@@ -110,7 +107,8 @@ a:hover {
 
 .english-intro {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1.1em;
+    font-size: 0.85em;
+    text-align: center;
     font-style: italic;
     letter-spacing: -0.2px;
 }
@@ -123,76 +121,79 @@ a:hover {
 }
 
 #content h3 {
-    margin: 10% 0% 0% 75%;
+    margin: 0%;
+    margin-top: 10%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.4em;
-    font-weight: 650;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 680;
     color: #aa9c94;
     letter-spacing: 0.3px;
 }
 
 #video1 {
-    height: 320.369px;
-    border: 5px solid #aa9c94;
-    border-radius: 20px;
+    width: auto;
+    height: 170px;
+    border: 2px solid #aa9c94;
+    margin-left: 1
 }
 
 #video2 {
-    height: 330.369px;
-    border: 5px solid #aa9c94;
-    border-radius: 20px;
-    margin-right: 10%;
+    width: 250px;
+    height: auto;
+    border: 2px solid #aa9c94;
+    margin-left: 12.8%;
 }
 
 .works {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 5%;
 }
 
 #content h4 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.1em;
     text-align: center;
 }
 
 #content p {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1.32em;
+    font-size: 0.89em;
+    text-align:center;
     font-weight: 450;
     
 }
 
 #ref{
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1em;
+    font-size: 0.75em;
+    text-align: center;
     font-weight: 450;
     font-style: italic;
 }
 
 .work1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 10%;
 }
 
 .work2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 7%;
 }
 
 .description-right {
     display: flex;
     flex-direction: column;
-    margin-left: 7%;
+    margin-left: 0%;
 }
 
 .description-left {
-    display: flex;
-    flex-direction: column;
-    padding-right: 7%;
-    width: 64%;
+    display: none;
 }
 
 /*footer*/
@@ -201,14 +202,17 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 10%;
+    justify-content: center;
 }
+
 footer a {
     color: black;
     text-decoration: none;
 }
+
 .contactme {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 2.1em;
+    font-size: 1.4em;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -232,7 +236,6 @@ footer h3:hover {
     font-weight: 590;
     font-size: 20px;
 }
-
 #github {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 590;
@@ -244,7 +247,7 @@ footer h3:hover {
 footer p {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 100;
-    font-size: 15px;
+    font-size: 12px;
     font-style: italic;
     margin: 0;
     margin-top: 2%;
@@ -318,4 +321,240 @@ a[title='Flaticon']:hover {
     text-decoration: none;
     color: black;
     transition: all o.5s;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/* 태블릿 - 768px 이상 */
+@media screen and (min-width: 768px) {
+    .frame {
+        margin: 5% 45px 8px 45px;
+    }
+
+/*navigator*/
+.nav h3 {
+    font-size: 1.7em;
+}
+
+.nav li {
+    margin-right: 10px;
+    font-size: 1.15em;
+}
+
+/*dash-board*/
+
+.dash-board > img {
+    display: unset;
+    position: absolute;
+    width: auto;
+    height: 135.283px;
+    margin-top: 1.728px;
+    margin-left: 57%;
+    border: 2px solid #c2b4ab;
+    border-radius: 50%;
+}
+
+.korean-intro {
+    font-size: 1.4em;
+    text-align: unset;
+    margin-bottom: 25px;
+}
+
+.english-intro {
+    font-size: 0.9em;
+    text-align: unset;
+}
+
+
+/*content*/
+
+#content h3 {
+    font-size: 1.45em;
+}
+
+#video1 {
+    width: 580px;
+    height: auto;
+    border: 2px solid #aa9c94;
+    margin-left: 6.25%;
+    border-radius: 20px;
+    
+}
+
+#video2 {
+    height: auto;
+    width: 325px;
+    border: 2px solid #aa9c94;
+    margin-left: 25.1%;
+    border-radius: 20px;
+}
+
+#content h4 {
+    font-size: 1.6em;
+}
+
+#content p {
+    font-size: 1.22em;
+    text-align: center;
+}
+
+#ref{
+    font-size: 1.05em;
+    text-align: center;
+}
+
+.work1 {
+    flex-direction: column;
+}
+
+.work2 {
+    flex-direction: column;
+    }
+
+.works {
+justify-content: center;
+}
+
+.description-left {
+    display: none;
+    }
+
+.nonpc-description {
+    display: initial;
+    }
+
+/*footer*/
+    
+footer {
+    justify-content: center;
+}
+
+.contactme {
+    font-size: 1.7em;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+}
+
+
+
+/* PC - 992px 이상 */
+@media screen and (min-width: 992px) {
+.frame {
+    margin: 5% 100px 8px 100px;
+}
+
+/*navigator*/
+
+.nav h3 {
+    font-size: 1.8em;
+}
+
+.nav li {
+    margin-right: 15px;
+    font-size: 1.3em;
+}
+
+/*dash-board*/
+
+.dash-board > img {
+    height: 230.283px;
+    margin-top: 22.728px;
+    margin-left: 58%;
+}
+
+.korean-intro {
+    font-size: 2.4em;
+}
+
+.english-intro {
+    font-size: 1.1em;
+    }    /*content*/
+
+#content h3 {
+    margin: 10% 0% 0% 75%;
+    font-size: 1.5em;
+    text-align:unset;
+}
+
+#video1 {
+    margin-left: 0;
+    height: 320.369px;
+    width: 657.231px;
+    border: 5px solid #aa9c94;
+}
+
+#video2 {
+    height: 330.360px;
+    width: 318.639px;
+    border: 5px solid #aa9c94;
+    margin-right: 10%;
+    margin-left: 0;
+}
+
+#content h4 {
+    font-size: 1.8em;
+}
+
+#content p {
+    font-size: 1.31em;
+    text-align: unset;
+}
+
+#ref{
+    font-size: 1em;
+    text-align: unset;
+}
+
+.work1 {
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+
+.work2 {
+    flex-direction: row;
+    margin-bottom: 7%;
+    }
+
+.works {
+    justify-content: unset;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    }
+
+.nonpc-description {
+    display: none;
+}
+
+.description-left {
+    display: flex;
+    flex-direction: column;
+    padding-right: 6%;
+    width: 64%;
+}
+
+.description-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+}
+
+/*footer*/
+    
+footer {
+    justify-content:unset;
+}
+
+.contactme {
+    font-size: 2.1em;
+}
+
+footer p {
+    font-size: 15px;
+}
+
 }
