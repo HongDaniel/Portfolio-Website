@@ -196,6 +196,12 @@ a:hover {
     display: none;
 }
 
+.nonpc-description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+}
+
 /*footer*/
 footer {
     display: flex;
